@@ -43,6 +43,7 @@ const List = ({ url }) => {
                     <b>Price</b>
                     <b>Action</b>
                 </div>
+                
                 {list.map((item, index) => {
                     return (
                         <div key={index} className='list-table-format'>
