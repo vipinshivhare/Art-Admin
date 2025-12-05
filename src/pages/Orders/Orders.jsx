@@ -54,6 +54,7 @@ const Orders = ({ url }) => {
                     <thead>
                         <tr>
                             <th>Order ID</th>
+                            <th>Customer Name</th>
                             <th>User ID</th>
                             <th>Amount (₹)</th>
                             <th>Status</th>
@@ -63,6 +64,7 @@ const Orders = ({ url }) => {
                         {orders.map((order) => (
                             <tr key={order._id}>
                                 <td>{order._id}</td>
+                                <td>{order.customerName || "Unknown"}</td>
                                 <td>{order.userId}</td>
                                 <td>{order.amount}</td>
                                 <td>
